@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 150px;
+  background-color: var(--softBg);
+  border-radius: 10px;
+}
+
+.socialButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  /* font-size: 18px; */
+}
+
+.socialButton:first-child {
+  background-color: #ff5555;
+}
+
+.socialButton:nth-child(2) {
+  background-color: #111;
+}
+.socialButton:nth-child(3) {
+  background-color: #087bea;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    padding: 50px;
+  }
+
+  .socialButton {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .socialButton {
+    font-weight: 400;
+    font-size: 13px;
+  }
+}
